@@ -15,7 +15,7 @@ def remove_url_anchor(url: str) -> str:
 def sort_gift_code(code: str) -> str:
     """
     Sort the Gift Code
-    :param code:
-    :return:
+    :param code: str
+    :return: str
     """
     return ''.join(sorted(code))
