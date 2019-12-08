@@ -37,5 +37,5 @@ print(owned_cat_and_dog(24, 24) == [2, 2])
 print(owned_cat_and_dog(56, 64) == [10, 10])
 
 
-def pernicious(n):
-    return [x for x in range(int(n) + 1) if bin(x).count("1") in [2, 3, 5, 7, 11, 13]] or "No pernicious numbers"
+def pernicious(num):
+    return [elem for elem in range(int(num) + 1) if bin(elem).count("1") in [2, 3, 5, 7, 11, 13]] or "No pernicious numbers"
