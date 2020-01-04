@@ -3,6 +3,7 @@
 """
 from string import ascii_lowercase
 
+
 def high(lst):
     """
     Highest Scoring Word
