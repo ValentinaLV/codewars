@@ -51,3 +51,9 @@ lst_square = list(map(multiply, lst5))
 lst_square2 = [x * x for x in lst5]
 print(lst_square)
 print(lst_square2)
+
+
+def map(func, iterable):
+    for i in iterable:
+        yield func(i)
+
