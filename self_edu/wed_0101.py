@@ -46,7 +46,7 @@ def get_middle(s):
     return s[index] if len(s) % 2 else s[index - 1] + s[index]
 
 
-print(get_middle("test") == "es")
+print(get_middle("test_package") == "es")
 print(get_middle("testing") == "t")
 print(get_middle("middle") == "dd")
 print(get_middle("A") == "A")
