@@ -96,3 +96,8 @@ def two(n):
 # print(one(10))
 
 l1 = timeit("name")(one)(10)
+
+d = {"name": "John", "car": "audi", "color": "red"}
+l = [1,2,3]
+print(*d)
+print(*l)

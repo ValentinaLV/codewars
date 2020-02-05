@@ -13,3 +13,12 @@
 #     except ValidationError as e:
 #         return {"message": str(e)}, 422
 #     return order_archive_schema.dump(order_archive)
+
+a = 5
+b = a
+print(id(a), id(b))
+print(a == b)
+b = 7
+print(id(a), id(b))
+print(a == b)
+print(hash(a), hash(b))
