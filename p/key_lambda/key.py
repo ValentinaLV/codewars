@@ -27,10 +27,7 @@ print(data)
 
 
 def absolute(x):
-    if x >= 0:
-        return x
-    else:
-        return -x
+    return x if x >= 0 else -x
 
 
 lst2 = [1, 7, 4, -2, 3]

@@ -130,7 +130,9 @@ car = {
     "year": 1964
 }
 x = car.setdefault('models', 'Bronco')
+y = car.setdefault('name', 'Valentyna')
 print(x)  # Bronco
+# print(car['names'])
 
 # fromkeys
 # Create a dictionary with 3 keys, all with the value 0:

@@ -44,6 +44,13 @@ print(fib2(10))
 print(fib3(10))
 
 
+def fib4(n):
+    a, b = 1, 1
+    for i in range(n-1):
+        a, b = b, a+b
+    return a
+
+
 def get_fib_seq(num):
     i = 2
     fib_arr = [0, 1]

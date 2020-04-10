@@ -13,3 +13,4 @@ print(lst_reversed)  # ['peanut', 'mango', 'melon', 'kiwi', 'orange', 'cherry', 
 
 print(sorted(lst))  # ['apple', 'blackcurrant', 'cherry', 'kiwi', 'lemon', 'mango', 'melon', 'orange', 'peanut']
 print(sorted(lst, reverse=True))  # ['peanut', 'orange', 'melon', 'mango', 'lemon', 'kiwi', 'cherry', 'blackcurrant', 'apple']
+print(sorted(lst, reverse=True, key=lambda c: c[1]))

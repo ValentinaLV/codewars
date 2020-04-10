@@ -104,3 +104,11 @@ def simple_sort(lst):
 print(simple_sort(["1", "4", "0", "6", "9"]))
 
 print(list(map(lambda x: int(x), ["1", "4", "0", "6", "9"])))
+
+d = {n:n**2 for n in range(10)}
+print(d)
+
+d2 = {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+d3 = {k: v/2 for (k, v) in d2.items()}
+print(d3)
+

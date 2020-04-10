@@ -39,6 +39,35 @@ def timeit(arg):
     return outer
 
 
+def benchmark(iters):
+    def actual_decorator(func):
+        import time
+
+        def wrapper(*args, **kwargs):
+            total = 0
+            for i in range(iters):
+                start = time.time()
+                return_value = func(*args, **kwargs)
+                end = time.time()
+                total = total + (end - start)
+            print('[*] Среднее время выполнения: {} секунд.'.format(total / iters))
+            return return_value
+
+        return wrapper
+
+    return actual_decorator
+
+
+@benchmark(iters=10)
+def fetch_webpage(url):
+    import requests
+    webpage = requests.get(url)
+    return webpage.text
+
+
+webpage = fetch_webpage('https://google.com')
+print(webpage)
+
 # - 1 -
 # @timeit
 # def one():
@@ -98,6 +127,16 @@ def two(n):
 l1 = timeit("name")(one)(10)
 
 d = {"name": "John", "car": "audi", "color": "red"}
-l = [1,2,3]
+l = [1, 2, 3]
 print(*d)
 print(*l)
+
+
+def outer(func):
+    x = 2
+
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        return result
+
+    return wrapper

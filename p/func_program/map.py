@@ -20,7 +20,9 @@ print(trip_map2)
 # from str to int
 items_str = ['1', '2', '3', '4', '5']
 items_int = list(map(lambda n: int(n), items_str))
+items_int2 = list(map(int, items_str))
 print(items_int)
+print(items_int2)
 
 
 def multiply(x):
