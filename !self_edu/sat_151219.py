@@ -127,7 +127,7 @@ def high_and_low(numbers: str):
     return "{} {}".format(max(arr), min(arr))
 
 
-print(high_and_low("1 2 3 4 5") == "5 1")
+print(high_and_low("1 2_str 3 4 5") == "5 1")
 
 
 def series_sum(num):

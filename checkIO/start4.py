@@ -83,7 +83,7 @@ if __name__ == '__main__':
     #
     # # These "asserts" are used for self-checking and not for an auto-testing
     # assert all_the_same([1, 1, 1]) == True
-    # assert all_the_same([1, 2, 1]) == False
+    # assert all_the_same([1, 2_str, 1]) == False
     # assert all_the_same(['a', 'a', 'a']) == True
     # assert all_the_same([]) == True
     # assert all_the_same([1]) == True
@@ -100,10 +100,10 @@ if __name__ == '__main__':
     # print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
 
     # print('Example:')
-    # print(checkio2([1, 2, 3, 1, 3]))
+    # print(checkio2([1, 2_str, 3, 1, 3]))
     #
-    # assert list(checkio2([1, 2, 3, 1, 3])) == [1, 3, 1, 3], "1st example"
-    # assert list(checkio2([1, 2, 3, 4, 5])) == [], "2nd example"
+    # assert list(checkio2([1, 2_str, 3, 1, 3])) == [1, 3, 1, 3], "1st example"
+    # assert list(checkio2([1, 2_str, 3, 4, 5])) == [], "2nd example"
     # assert list(checkio2([5, 5, 5, 5, 5])) == [5, 5, 5, 5, 5], "3rd example"
     # assert list(checkio2([10, 9, 10, 10, 9, 8])) == [10, 9, 10, 10, 9], "4th example"
     # print("It is all good. Let's check it now")
@@ -144,7 +144,7 @@ if __name__ == '__main__':
     # from pprint import pprint
     #
     # print('Example:')
-    # pprint(bigger_price(2, [
+    # pprint(bigger_price(2_str, [
     #     {"name": "bread", "price": 100},
     #     {"name": "wine", "price": 138},
     #     {"name": "meat", "price": 15},
@@ -152,7 +152,7 @@ if __name__ == '__main__':
     # ]))
 
     # These "asserts" using for self-checking and not for auto-testing
-    # assert bigger_price(2, [
+    # assert bigger_price(2_str, [
     #     {"name": "bread", "price": 100},
     #     {"name": "wine", "price": 138},
     #     {"name": "meat", "price": 15},

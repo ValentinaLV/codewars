@@ -7,7 +7,7 @@ one item at a time.
 my_list = [76, 92.3, "hello", True, 4, 76]
 
 """
-2 - Append “apple” and 76 to the list.
+2_str - Append “apple” and 76 to the list.
 Insert the value “cat” at position 3.
 Insert the value 99 at the start of the list.
 Find the index of “hello”.
@@ -52,7 +52,7 @@ print(average(l))
 
 """
 5 - Write a function sum_of_squares(xs) that computes the sum of the 
-squares of the numbers in the list xs. For example, sum_of_squares([2, 3, 4]) 
+squares of the numbers in the list xs. For example, sum_of_squares([2_str, 3, 4]) 
 should return 4+9+16 which is 29:
 """
 

@@ -48,7 +48,7 @@ def solve(s):
 
 
 if __name__ == '__main__':
-    print(swap_case('HackerRank.com presents "Pythonist 2".'))
+    print(swap_case('HackerRank.com presents "Pythonist 2_str".'))
     print(split_and_join("this is a string"))
     print(mutate_string('abracadabra', 5, 'k'))
     print(count_substring('ABCDCDC', 'CDC'))

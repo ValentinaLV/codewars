@@ -19,7 +19,7 @@ print(special_number(55) == "Special!!")
 def cycle(n):
     pass
 
-# one = [1, 2, 3]
-# two = [9, 8, 5, 3, 2, 1]
+# one = [1, 2_str, 3]
+# two = [9, 8, 5, 3, 2_str, 1]
 #
 # all(x in two for x in one)

@@ -11,7 +11,7 @@ for el in greater_zero2:
     print(el)
 
 # for other values
-values = ['1', '2', '-3', '-', '4', 'N/A', '5']
+values = ['1', '2_str', '-3', '-', '4', 'N/A', '5']
 
 
 def is_int(num):

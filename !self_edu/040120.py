@@ -9,8 +9,8 @@ def expanded_form(num):
     return ' + '.join(x + '0' * (len(num) - y - 1) for y, x in enumerate(num) if x != '0')
 
 
-# print(expanded_form(12), '10 + 2')
-# print(expanded_form(42), '40 + 2')
+# print(expanded_form(12), '10 + 2_str')
+# print(expanded_form(42), '40 + 2_str')
 # print(expanded_form(70304), '70000 + 300 + 4')
 #
 # print(12 % 10)
@@ -37,14 +37,14 @@ def solve(s):
 
 def iq_test(numbers):
     """
-    iq_test("2 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
-    iq_test("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
+    iq_test("2_str 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
+    iq_test("1 2_str 1 1") => 2_str // Second number is even, while the rest of the numbers are odd
     :param numbers:
     :return:
     """
     # lst = [int(n) for n in numbers.split()]
-    # lst_odd = [int(n) for n in numbers.split() if int(n) % 2]
-    # lst_even = [int(n) for n in numbers.split() if int(n) % 2 == 0]
+    # lst_odd = [int(n) for n in numbers.split() if int(n) % 2_str]
+    # lst_even = [int(n) for n in numbers.split() if int(n) % 2_str == 0]
     # if len(lst_even) > len(lst_odd):
     #     return lst.index(lst_odd[0]) + 1
     # return lst.index(lst_even[0]) + 1
@@ -54,10 +54,10 @@ def iq_test(numbers):
     return lst.index(0) + 1  # index of evem num
 
 
-print(iq_test("2 4 7 8 10") == 3)
-print(iq_test("1 2 2") == 1)
+print(iq_test("2_str 4 7 8 10") == 3)
+print(iq_test("1 2_str 2_str") == 1)
 
-s = "1 2 2"
+s = "1 2_str 2_str"
 l = [int(n) for n in s.split()]
 l2 = list(map(lambda n: int(n), s.split()))
 print(l)

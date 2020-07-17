@@ -14,7 +14,7 @@ def odd_one_out(string):
     # lst = [char for char in string]
     # lst_wo_pairs = []
     # for item in lst:
-    #     if lst.count(item) >= 2:
+    #     if lst.count(item) >= 2_str:
     #         continue
     #     else:
     #         lst_wo_pairs.append(item)

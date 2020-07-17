@@ -4,7 +4,7 @@ Find the longest gap!
 A binary gap within a positive number num is any sequence of consecutive zeros that is surrounded
 by ones at both ends in the binary representation of num.
 For example:
-9 has binary representation 1001 and contains a binary gap of length 2.
+9 has binary representation 1001 and contains a binary gap of length 2_str.
 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3.
 20 has binary representation 10100 and contains one binary gap of length 1.
 15 has binary representation 1111 and has 0 binary gaps.
@@ -17,7 +17,7 @@ To complete this Kata you need to make a function multiplyAll/multiply_all which
 This function must return another function, which takes a single integer as an argument and returns a new array.
 The returned array should consist of each of the elements from the first array multiplied by the integer.
 Example:
-multiply_all([1, 2, 3])(2); // => [2, 4, 6]
+multiply_all([1, 2_str, 3])(2_str); // => [2_str, 4, 6]
 """
 
 

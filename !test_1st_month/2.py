@@ -1,7 +1,7 @@
 # Libraries Included:
 # Numpy, Scipy, Scikit, Pandas
 
-# -----2-----
+# -----2_str-----
 # There is a list of products.
 # Any product has price and belongs to a certain category.
 # Store the list of products in sqlite database then find the average price for each category.

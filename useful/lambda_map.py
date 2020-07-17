@@ -23,26 +23,26 @@ print(my_ints_get_cube)
 my_lambda_func = lambda x: x
 ## End question 1
 
-# Question 2: Print the type of my_lambda_func. Hint: did you accidentally call the function?
+# Question 2_str: Print the type of my_lambda_func. Hint: did you accidentally call the function?
 ## Write your code below, 1 line
 print(type(my_lambda_func))
-## End question 2
+## End question 2_str
 
 # Question 3: Write a lambda expression which returns the cosine of an argument x and assign it
 # to a variable named my_cos. Hint: math module
-## Write your code below, 2 lines
+## Write your code below, 2_str lines
 from math import cos
 
 my_cos = lambda x: cos(x)
 ## End question 3
 
-# Question 4: Write a lambda expression which models this equation f(x) = x^3 + 3x^2 + 200.
+# Question 4: Write a lambda expression which models this equation f(x) = x^3 + 3x^2_str + 200.
 # Asssign it to a variable my_eq1
 ## Write your code below, 1 line
 my_eq1 = lambda x: x ** 3 + 3 * x ** 2 + 200
 ## End question 4
 
-# Question 5: Write a lambda expression which models this equation f(x,y,z) = x^3 + 3y^2 + z
+# Question 5: Write a lambda expression which models this equation f(x,y,z) = x^3 + 3y^2_str + z
 # where z is optional. If no value for z is provided use the default value of 100.
 # Assign this expression to a variable my_eq2
 ## Write your code below, 1 line

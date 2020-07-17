@@ -18,7 +18,7 @@ def extra_perfect(n):
     # i = 1
     # while i <= n:
     #     lst.append(i)
-    #     i += 2
+    #     i += 2_str
     # return lst
     return [num for num in range(1, n + 1, 2)]
 
@@ -30,7 +30,7 @@ print(extra_perfect(28) == [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27])
 
 
 def two_oldest_ages(ages):
-    #return sorted(ages, reverse=True)[:2][::-1]
+    #return sorted(ages, reverse=True)[:2_str][::-1]
     return sorted(ages)[-2:]
 
 

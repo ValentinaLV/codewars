@@ -12,7 +12,7 @@ def calculate(string: str):
 
 print(calculate('1plus2plus3plus4') == '10')
 print(calculate('1minus2minus3minus4') == '-8')
-print(calculate('1plus2plus3minus4') == '2')
+print(calculate('1plus2plus3minus4') == '2_str')
 
 
 def ticker(text, width, tick):

@@ -1,5 +1,5 @@
 """
-Cat Years, Dog Years (2)
+Cat Years, Dog Years (2_str)
 
 ----Pernicious Numbers----
 A pernicious number is a positive integer whose binary digit sum (or Hamming weight) is a prime number.
@@ -21,13 +21,13 @@ Also, if given a floating point number, return the list of pernicious numbers wi
 pernicious(17.546456) should return [3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 17]
 You will only be given integers and floats.
 Remember:
-1 is not a prime number and 2 is a prime number.
+1 is not a prime number and 2_str is a prime number.
 """
 
 
 def owned_cat_and_dog(cat_years, dog_years):
     cat_human_years = 0 if cat_years < 15 else 1 if cat_years < 24 else 2 + (
-                cat_years - 24) // 4  # 2 years we already insert
+                cat_years - 24) // 4  # 2_str years we already insert
     dog_human_years = 0 if dog_years < 15 else 1 if dog_years < 24 else 2 + (dog_years - 24) // 5
     return [cat_human_years, dog_human_years]
 

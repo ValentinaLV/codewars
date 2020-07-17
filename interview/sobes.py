@@ -10,6 +10,16 @@ def fib(n):
 print(fib(9))
 
 
+def fib2(n):
+    num1, num2 = 0, 1
+    for i in range(n - 1):
+        num1, num2 = num2, num1 + num2
+    return num1
+
+
+print(fib(2))
+
+
 def fib_wo_recurs(n):
     n1, n2 = 0, 1
     count = 0
@@ -105,10 +115,19 @@ print(simple_sort(["1", "4", "0", "6", "9"]))
 
 print(list(map(lambda x: int(x), ["1", "4", "0", "6", "9"])))
 
-d = {n:n**2 for n in range(10)}
+d = {n: n ** 2 for n in range(10)}
 print(d)
 
 d2 = {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
-d3 = {k: v/2 for (k, v) in d2.items()}
+d3 = {k: v / 2 for (k, v) in d2.items()}
 print(d3)
 
+def myfunc1():
+  x = "John"
+  def myfunc2():
+    nonlocal x
+    x = "hello"
+  myfunc2()
+  return x
+
+print(myfunc1())

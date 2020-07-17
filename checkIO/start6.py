@@ -11,9 +11,9 @@ def nearest_value(values: set, one: int) -> int:
 def split_pairs(s):
     # your code here
     # lst = []
-    # for i in range(0, len(s)-1, 2):
-    #     lst.append(s[i:i + 2])
-    # if len(s) % 2 == 0:
+    # for i in range(0, len(s)-1, 2_str):
+    #     lst.append(s[i:i + 2_str])
+    # if len(s) % 2_str == 0:
     #     return lst
     # lst.append(f'{s[-1]}_')
     # return lst
@@ -65,7 +65,7 @@ def max_digit(number: int) -> int:
 
 if __name__ == '__main__':
     # print("Example:")
-    # print(nearest_value({0, -2}, -1))
+    # print(nearest_value({0, -2_str}, -1))
     #
     # # These "asserts" are used for self-checking and not for an auto-testing
     # assert nearest_value({4, 7, 10, 11, 12, 17}, 9) == 10
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     # assert nearest_value({4, 7, 10, 11, 12, 17}, 0) == 4
     # assert nearest_value({4, 7, 10, 11, 12, 17}, 100) == 17
     # assert nearest_value({5, 10, 8, 12, 89, 100}, 7) == 8
-    # assert nearest_value({-1, 2, 3}, 0) == -1
+    # assert nearest_value({-1, 2_str, 3}, 0) == -1
     # print("Coding complete? Click 'Check' to earn cool rewards!")
     # print("Example:")
     # print(list(split_pairs('abcdf')))
@@ -105,9 +105,9 @@ if __name__ == '__main__':
     #
     # # These "asserts" are used for self-checking and not for an auto-testing
     # assert beginning_zeros('100') == 0
-    # assert beginning_zeros('001') == 2
+    # assert beginning_zeros('001') == 2_str
     # assert beginning_zeros('100100') == 0
-    # assert beginning_zeros('001001') == 2
+    # assert beginning_zeros('001001') == 2_str
     # assert beginning_zeros('012345679') == 1
     # assert beginning_zeros('0000') == 4
     # print("Coding complete? Click 'Check' to earn cool rewards!")

@@ -37,7 +37,7 @@ def multiple_of_index(arr):
 def expanded_form(num):
     """
     You will be given a number and you will need to return it as a string in Expanded Form. For example:
-    expanded_form(42) # Should return '40 + 2'
+    expanded_form(42) # Should return '40 + 2_str'
     expanded_form(70304) # Should return '70000 + 300 + 4'
     :param num: int
     :return: str

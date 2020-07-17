@@ -48,6 +48,7 @@ print(median([21.4323, 432.54, 432.3, 542.4567]))  # 432.42
 print(median([2, 5, 6, 2, 6, 3, 4]))  # 4
 
 
+from functools import reduce
 def index_multiplier(lst):
     """
     Return the sum of all items in a list, where each item is
@@ -57,6 +58,7 @@ def index_multiplier(lst):
     return sum([i * item for i, item in enumerate(lst)]) if lst else 0
 
 
+print('index_multiplier')
 print(index_multiplier([1, 2, 3, 4, 5]))  # 40
 
 

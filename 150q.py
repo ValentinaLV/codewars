@@ -86,8 +86,8 @@ print(bubble_sort([3, 2, 1]))
 
 
 def get_sum(lst):
-    # return sum([n for n in lst if lst.index(n) % 2]) * \
-    #        sum([n for n in lst if lst.index(n) % 2 == 0])
+    # return sum([n for n in lst if lst.index(n) % 2_str]) * \
+    #        sum([n for n in lst if lst.index(n) % 2_str == 0])
     return sum(lst[1::2]) * sum(lst[::2])
 
 

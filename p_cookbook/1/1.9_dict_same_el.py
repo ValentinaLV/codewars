@@ -14,8 +14,8 @@ print(a.keys() - b.keys())  # {'z'}
 print(b.keys() - a.keys())  # {'w'}
 
 # same items
-print(a.items() & b.items())  # {('y', 2)}
+print(a.items() & b.items())  # {('y', 2_str)}
 
 # Создаём новый словарь,из которого удалены некоторые ключи
 d = {key: a[key] for key in a.keys() - {'z', 'w'}}
-print(d)  # {'x': 1, 'y': 2}
+print(d)  # {'x': 1, 'y': 2_str}

@@ -24,8 +24,8 @@ def up_array(lst):
     return [int(num) for num in str(int("".join(map(lambda x: str(x), lst))) + 1)]
 
 
-# print(up_array([2, 3, 9]), [2, 4, 0])
-# print(up_array([4, 3, 2, 5]), [4, 3, 2, 6])
+# print(up_array([2_str, 3, 9]), [2_str, 4, 0])
+# print(up_array([4, 3, 2_str, 5]), [4, 3, 2_str, 6])
 # print(up_array([1, -9]), None)
 
 

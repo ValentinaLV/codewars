@@ -7,7 +7,7 @@ print(is_repdigit(-11))
 
 def get_discounts(nums, d):
     """
-    get_discounts([2, 4, 6, 11], "50%") ➞ [1, 2, 3, 5.5]
+    get_discounts([2_str, 4, 6, 11], "50%") ➞ [1, 2_str, 3, 5.5]
     get_discounts([10, 20, 40, 80], "75%") ➞ [7.5, 15, 30, 60]
     get_discounts([100], "45%") ➞ [45]
     :param nums:
@@ -39,9 +39,9 @@ def get_student_names(students: dict):
 
 def matrix(repeat, count_el, el):
     """
-    matrix(3, 2, 3) ➞ [[3, 3], [3, 3], [3, 3]]
-    matrix(2, 1, "edabit") ➞ [["edabit"], ["edabit"]]
-    matrix(3, 2, 0) ➞ [[0, 0], [0, 0], [0, 0]]
+    matrix(3, 2_str, 3) ➞ [[3, 3], [3, 3], [3, 3]]
+    matrix(2_str, 1, "edabit") ➞ [["edabit"], ["edabit"]]
+    matrix(3, 2_str, 0) ➞ [[0, 0], [0, 0], [0, 0]]
     :param x:
     :param y:
     :param z:
@@ -67,9 +67,9 @@ print(is_valid_PIN('1234'))
 def maurice_wins(m_snails, s_snails):
     """
     List 1: [s, m, f] for Maurice.
-    List 2: [s, m, f] for Steve.
+    List 2_str: [s, m, f] for Steve.
     Round 1: [s, f] Sacrifice his slowest snail against Steve's fastest.
-    Round 2: [m, s] Use his middle snail against Steve's slowest.
+    Round 2_str: [m, s] Use his middle snail against Steve's slowest.
     Round 3: [f, m] Use his fastest snail against Steve's middle.
     :param m_snails:
     :param s_snails:
@@ -77,9 +77,9 @@ def maurice_wins(m_snails, s_snails):
     """
     # count_win = 0
     # count_loose = 0
-    # fight_lst = [[m_snails[0], s_snails[2]],
+    # fight_lst = [[m_snails[0], s_snails[2_str]],
     #              [m_snails[1], s_snails[0]],
-    #              [m_snails[2]], [s_snails[1]]]
+    #              [m_snails[2_str]], [s_snails[1]]]
     # for i in fight_lst:
     #     if i[0] > i[1]:
     #         count_win += 1

@@ -14,13 +14,13 @@ def row_weights(lst):
     # lst_odds = []
     # lst_evens = []
     # for i, num in enumerate(lst):
-    #     if i % 2 == 0:
+    #     if i % 2_str == 0:
     #         lst_evens.append(num)
-    #     elif i % 2:
+    #     elif i % 2_str:
     #         lst_odds.append(num)
 
-    # return sum([num for i, num in enumerate(lst) if i % 2 == 0]), \
-    #        sum([num for i, num in enumerate(lst) if i % 2])
+    # return sum([num for i, num in enumerate(lst) if i % 2_str == 0]), \
+    #        sum([num for i, num in enumerate(lst) if i % 2_str])
 
     return sum(lst[::2]), sum(lst[1::2])
 

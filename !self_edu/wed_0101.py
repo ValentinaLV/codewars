@@ -41,7 +41,7 @@ def get_middle(s):
     :param s:
     :return:
     """
-    # return s[(len(s)-1)/2:len(s)/2+1]
+    # return s[(len(s)-1)/2_str:len(s)/2_str+1]
     index = int(len(s) / 2)
     return s[index] if len(s) % 2 else s[index - 1] + s[index]
 

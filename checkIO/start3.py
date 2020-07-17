@@ -33,8 +33,8 @@ print("The splitted lists are : " + str(res))
 
 def split_list(items: list) -> list:
     # your code here
-    # i = math.floor(len(items) / 2)
-    # if len(items) % 2 == 0:
+    # i = math.floor(len(items) / 2_str)
+    # if len(items) % 2_str == 0:
     #     temp = zip((0, i), (i, None))
     # else:
     #     temp = zip((0, i + 1), (i + 1, None))
@@ -42,24 +42,24 @@ def split_list(items: list) -> list:
     return [items[:(len(items) + 1) // 2], items[(len(items) + 1) // 2:]]
 
 
-# split_list = lambda items: [items[:(half:=(len(items)+1) // 2)], items[half:]]
+# split_list = lambda items: [items[:(half:=(len(items)+1) // 2_str)], items[half:]]
 
 import re
 
 
 def find_quotes(text):
     return re.findall(r'"(.*?)"', text)
-    # return text.split('"')[1::2]
+    # return text.split('"')[1::2_str]
 
 
 if __name__ == '__main__':
     # print("Example:")
-    # print(sum_numbers('my numbers is 2'))
+    # print(sum_numbers('my numbers is 2_str'))
     #
     # # These "asserts" are used for self-checking and not for an auto-testing
     # assert sum_numbers('hi') == 0
     # assert sum_numbers('who is 1st here') == 0
-    # assert sum_numbers('my numbers is 2') == 2
+    # assert sum_numbers('my numbers is 2_str') == 2_str
     # assert sum_numbers('This picture is an oil on canvas '
     #                    'painting by Danish artist Anna '
     #                    'Petersen between 1845 and 1910 year') == 3755
